@@ -35,7 +35,6 @@ public class C3P0Demo {
                 System.out.println("转出成功");
             else
                 System.out.println("转出失败");
-
             sql = "update student set balance = balance + ? where username = ?";
             preparedStatement2 = connection.prepareStatement(sql);
             preparedStatement2.setInt(1,money);
