@@ -40,15 +40,13 @@ public class C3P0DataSource {
         comboPooledDataSource.setMaxPoolSize(maxInitialSize);
         comboPooledDataSource.setMinPoolSize(minIdle);
     }*/
-    /* 从配置文件读取 */
+    /* 自动读取 default配置文件  */
     private static ComboPooledDataSource comboPooledDataSource;
     static {
         comboPooledDataSource = new ComboPooledDataSource();
-
-        //InputStream inputStream = C3P0DataSource.class.getClassLoader().getResourceAsStream("")
     }
     /*
-    *   获取连接 自动读取
+    *   获取连接
     * */
     public static Connection getConnection(){
         try {
