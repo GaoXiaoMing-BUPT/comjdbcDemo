@@ -47,7 +47,7 @@ public class C3P0Demo {
             connection.commit();//提交事务
 
         } catch (SQLException e) {
-            //C3P0DataSource.close(connection,preparedStatement1,preparedStatement2);
+            C3P0DataSource.close(connection,preparedStatement1,preparedStatement2);
             e.printStackTrace();
         }
     }
