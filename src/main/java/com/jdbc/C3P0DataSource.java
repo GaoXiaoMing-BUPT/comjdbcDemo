@@ -17,7 +17,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class C3P0DataSource {
-    private static final String url = "jdbc:mysql://mysql:3306/jdbc_learn";
+    /*private static final String url = "jdbc:mysql://mysql:3306/jdbc_learn";
     private static final String user = "root";
     private static final String password = "123456789";
     private static final String mysqlDriverClass = "com.mysql.jdbc.Driver";
@@ -25,8 +25,8 @@ public class C3P0DataSource {
     private static final int maxInitialSize = 20;
     private static final int minIdle = 3;
     private static ComboPooledDataSource comboPooledDataSource;
-    /* 手动配置 */
-/*    static {
+    // 手动配置
+    static {
         comboPooledDataSource = new ComboPooledDataSource();
         try {
             comboPooledDataSource.setDriverClass(mysqlDriverClass);
@@ -41,9 +41,10 @@ public class C3P0DataSource {
         comboPooledDataSource.setMinPoolSize(minIdle);
     }*/
     /* 从配置文件读取 */
+    private static ComboPooledDataSource comboPooledDataSource;
     static {
         comboPooledDataSource = new ComboPooledDataSource();
-        comboPooledDataSource.
+        
         //InputStream inputStream = C3P0DataSource.class.getClassLoader().getResourceAsStream("")
     }
     /*
