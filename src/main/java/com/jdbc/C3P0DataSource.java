@@ -11,6 +11,7 @@ package com.jdbc;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 import java.beans.PropertyVetoException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -42,7 +43,7 @@ public class C3P0DataSource {
     /* 从配置文件读取 */
     static {
         comboPooledDataSource = new ComboPooledDataSource();
-
+        InputStream inputStream = C3P0DataSource.class.getClassLoader().getResourceAsStream("")
     }
     /*
     *   获取连接
