@@ -25,7 +25,7 @@ public class C3P0DataSource {
     private static final int minIdle = 3;
     private static ComboPooledDataSource comboPooledDataSource;
     /* 手动配置 */
-    static {
+/*    static {
         comboPooledDataSource = new ComboPooledDataSource();
         try {
             comboPooledDataSource.setDriverClass(mysqlDriverClass);
@@ -38,12 +38,12 @@ public class C3P0DataSource {
         comboPooledDataSource.setInitialPoolSize(initialSize);
         comboPooledDataSource.setMaxPoolSize(maxInitialSize);
         comboPooledDataSource.setMinPoolSize(minIdle);
-    }
- /*   *//* 从配置文件读取 *//*
+    }*/
+    /* 从配置文件读取 */
     static {
         comboPooledDataSource = new ComboPooledDataSource();
 
-    }*/
+    }
     /*
     *   获取连接
     * */
