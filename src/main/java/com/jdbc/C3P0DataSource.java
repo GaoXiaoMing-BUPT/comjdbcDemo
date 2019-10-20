@@ -48,7 +48,7 @@ public class C3P0DataSource {
         //InputStream inputStream = C3P0DataSource.class.getClassLoader().getResourceAsStream("")
     }
     /*
-    *   获取连接
+    *   获取连接 自动读取
     * */
     public static Connection getConnection(){
         try {
