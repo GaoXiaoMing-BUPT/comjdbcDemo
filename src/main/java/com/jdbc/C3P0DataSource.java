@@ -44,7 +44,7 @@ public class C3P0DataSource {
     private static ComboPooledDataSource comboPooledDataSource;
     static {
         comboPooledDataSource = new ComboPooledDataSource();
-        comboPooledDataSource.set
+
         //InputStream inputStream = C3P0DataSource.class.getClassLoader().getResourceAsStream("")
     }
     /*
