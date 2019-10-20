@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <c3p0-config>
     <default-config>
-        <property name="jdbcUrl">
-            jdbc:mysql://mysql:3306/jdbc_learn
-        </property>
+        <property name="jdbcUrl">jdbc:mysql://mysql:3306/jdbc_learn</property>
         <property name="driverClass">com.mysql.jdbc.Driver</property>
         <property name="user">root</property>
         <property name="password">123456789</property>
