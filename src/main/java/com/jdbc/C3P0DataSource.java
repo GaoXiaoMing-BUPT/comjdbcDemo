@@ -43,6 +43,7 @@ public class C3P0DataSource {
     /* 从配置文件读取 */
     static {
         comboPooledDataSource = new ComboPooledDataSource();
+        comboPooledDataSource.
         //InputStream inputStream = C3P0DataSource.class.getClassLoader().getResourceAsStream("")
     }
     /*
